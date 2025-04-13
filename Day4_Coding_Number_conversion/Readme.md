@@ -139,7 +139,7 @@ For conversions from Binary, Octal, and Hexadecimal to Decimal, the program uses
 
 ## ✅ Code
 
-```java
+```
 public class Normal 
 {
     
@@ -158,9 +158,11 @@ public class Normal
         System.out.println(s.toString()); // Output: 1 1 0 1 1
     }
 ```
+
+    ### Decimal to Octal Conversion
 ---
 
-     Decimal to Octal Conversion
+```
     public  static void Dec_to_octal()
     {
         StringBuilder s=  new StringBuilder();
@@ -174,6 +176,8 @@ public class Normal
         System.out.println("decimal to octal conversion is :");
         System.out.println(s.toString()); // Output: 1 2
     }
+
+```
     ---
 
     // Decimal to Hexadecimal Conversion
