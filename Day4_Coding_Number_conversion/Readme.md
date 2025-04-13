@@ -111,6 +111,84 @@ public class NumberSystemConversion
 }
 
 
+
+✅ Output
+==> Decimal to Other Conversions:
+Decimal to Binary: 1010
+Decimal to Octal: 12
+Decimal to Hexadecimal: a
+
+==> Other to Decimal Conversions:
+Binary to Decimal: 10
+Octal to Decimal: 13
+Hexadecimal to Decimal: 10
+
+==> Prefix Literals in Java:
+Using Java Literals with Prefixes:
+Decimal (no prefix): 918171
+0x91 (Hexadecimal): 145
+0b1010 (Binary): 10
+071 (Octal): 57
+
+
+✅ Time & Space Complexity
+Operation	Time Complexity	Space Complexity
+Each Conversion	O(1)	O(1)
+Total Program	O(1)	O(1)
+💎 Summary
+Conversion Type	Method Used
+Decimal → Binary	Integer.toBinaryString()
+Decimal → Octal	Integer.toOctalString()
+Decimal → Hexadecimal	Integer.toHexString()
+Binary → Decimal	Integer.parseInt(s, 2)
+Octal → Decimal	Integer.parseInt(s, 8)
+Hex → Decimal	Integer.parseInt(s, 16)
+🧠 Methods Explained One by One
+1️⃣ decimalToBinary()
+Purpose: Convert a decimal number (e.g., 27) to binary.
+
+Logic: Divide the number by 2 repeatedly. Store the remainder at each step. Insert the remainders in reverse order using StringBuilder.
+
+Example Output: decimal to binary conversion is: 1 1 0 1 1
+
+2️⃣ decimalToOctal()
+Purpose: Convert a decimal number (e.g., 10) to octal.
+
+Logic: Divide the number by 8 repeatedly. Store remainders and reverse them using StringBuilder.
+
+Example Output: decimal to octal conversion is: 1 2
+
+3️⃣ decimalToHexadecimal()
+Purpose: Convert a decimal number (e.g., 10) to hexadecimal.
+
+Logic: Divide the number by 16 repeatedly. For remainders >= 10, map them to A-F. Insert characters in reverse using StringBuilder.
+
+Example Output: decimal to hexadecimal: A
+
+4️⃣ binaryToDecimal()
+Purpose: Convert a binary number (e.g., 1010) to decimal.
+
+Logic: Read binary as a string ("1010"). Convert string to integer. Use modulus and power of 2 to compute decimal.
+
+Example Output: binary to decimal number conversion is: 10
+
+5️⃣ octalToDecimal()
+Purpose: Convert an octal number (e.g., 42) to decimal.
+
+Logic: Read octal as a string ("42"). Convert string to integer. Use modulus and power of 8 to compute decimal.
+
+Example Output: octal to decimal number conversion is: 34
+
+✅ Highlights
+Uses Java’s inbuilt methods (Integer.toBinaryString(), Integer.toOctalString(), Integer.toHexString(), Integer.parseInt()).
+
+Demonstrates how Java handles number system prefixes (0b, 0, 0x).
+
+
+
+//next phase 
+
+
 💎 Summary
 Conversion Type	Method Used
 Decimal → Binary	Integer.toBinaryString()
