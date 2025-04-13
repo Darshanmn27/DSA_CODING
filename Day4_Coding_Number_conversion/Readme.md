@@ -12,7 +12,7 @@ Octal → Decimal	"15"	13
 Hexadecimal → Decimal	"A"	10
 💻 Approach
 💡 Logic:
-Use inbuilt methods from the Integer class:
+We use inbuilt methods from the Integer class:
 
 toBinaryString()
 
@@ -22,12 +22,9 @@ toHexString()
 
 parseInt(String s, base)
 
-Demonstrate how Java reads literal numbers with binary (0b), octal (0), and hexadecimal (0x) prefixes.
+Additionally, demonstrate how Java reads literal numbers with binary (0b), octal (0), and hexadecimal (0x) prefixes.
 
 ✅ Code
-java
-Copy
-Edit
 import java.util.*;
 
 public class NumberSystemConversion {
@@ -102,191 +99,3 @@ public class NumberSystemConversion {
         usingPrefixes();
     }
 }
-✅ Output:
-vbnet
-Copy
-Edit
-==> Decimal to Other Conversions:
-Decimal to Binary: 1010
-Decimal to Octal: 12
-Decimal to Hexadecimal: a
-
-==> Other to Decimal Conversions:
-Binary to Decimal: 10
-Octal to Decimal: 13
-Hexadecimal to Decimal: 10
-
-==> Prefix Literals in Java:
-Using Java Literals with Prefixes:
-Decimal (no prefix): 918171
-0x91 (Hexadecimal): 145
-0b1010 (Binary): 10
-071 (Octal): 57
-✅ Time & Space Complexity
-Operation	Time Complexity	Space Complexity
-Each Conversion	O(1)	O(1)
-Total Program	O(1)	O(1)
-💎 Summary
-Conversion Type	Method Used
-Decimal → Binary	Integer.toBinaryString()
-Decimal → Octal	Integer.toOctalString()
-Decimal → Hexadecimal	Integer.toHexString()
-Binary → Decimal	Integer.parseInt(s, 2)
-Octal → Decimal	Integer.parseInt(s, 8)
-Hex → Decimal	Integer.parseInt(s, 16)
-
-
-
-🧠 Methods Explained One by One
-1️⃣ Dec_to_bin()
-Purpose:
-Convert a decimal number (27) to binary.
-
-Logic:
-
-Divide the number by 2 repeatedly.
-
-Store the remainder at each step.
-
-Insert the remainders in reverse order using StringBuilder.
-int num = 27;
-while (num > 0) {
-    int r = num % 2;
-    s.insert(0, r + " ");
-    num = num / 2;
-}
-
-decimal to binary conversion is :
-1 1 0 1 1
-
-
-2️⃣ Dec_to_octal()
-Purpose:
-Convert a decimal number (10) to octal.
-
-Logic:
-
-Divide the number by 8 repeatedly.
-
-Store remainders and reverse them using StringBuilder.
-
-
-int num = 10;
-while (num > 0) {
-    int r = num % 8;
-    s.insert(0, r + " ");
-    num = num / 8;
-}
-
-decimal to octal conversion is :
-1 2
-
-
-
-3️⃣ decimal_to_hexadecimal()
-Purpose:
-Convert a decimal number (10) to hexadecimal.
-
-Logic:
-
-Divide the number by 16 repeatedly.
-
-For remainders >= 10, map them to A-F.
-
-Insert characters in reverse using StringBuilder.
-
-
-int dec = 10;
-int r = dec % 16;
-if (r < 10)
-    ss.insert(0, (char)('0' + r));
-else
-    ss.insert(0, (char)('A' + (r - 10)));
-
-
-
-decimal to hexadecimal
-A
-
-
-
-
-4️⃣ binary_to_decimal()
-Purpose:
-Convert a binary number (1010) to decimal.
-
-Logic:
-
-Read binary as a string ("1010").
-
-Convert string to integer.
-
-Use modulus and power of 2 to compute decimal.
-
-
-
-int res = 0, i = 0;
-while (num > 0) {
-    int r = num % 10;
-    res += r * Math.pow(2, i++);
-    num /= 10;
-}
-
-
-1010
-binary to decimal number conversion is :
-10
-
-
-5️⃣ octal_to_decimal()
-Purpose:
-Convert an octal number (42) to decimal.
-
-Logic:
-
-Read octal as a string ("42").
-
-Convert string to integer.
-
-Use modulus and power of 8 to compute decimal.
-
-
-int res = 0, i = 0;
-while (num > 0) {
-    int r = num % 10;
-    res += r * Math.pow(8, i++);
-    num /= 10;
-}
-
-
-
-42
-octal to decimal number conversion is :
-34
-
-
-decimal to binary conversion is :
-1 1 0 1 1
-decimal to octal conversion is :
-1 2
-decimal to hexadecimal
-A
-1010
-binary to decimal number conversion is :
-10
-42
-octal to decimal number conversion is :
-34
-
-
-✅ Highlights
-No built-in Java conversion methods used.
-
-Demonstrates use of loops, StringBuilder, type casting, ASCII manipulation.
-
-Easy to modify for dynamic inputs using Scanner.
-
-
-
-
-
