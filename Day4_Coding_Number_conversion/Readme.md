@@ -186,45 +186,45 @@ Demonstrates how Java handles number system prefixes (0b, 0, 0x).
 
 
 
-//next phase 
+# Number System Conversions in Java
 
+## 💎 Summary
 
-💎 Summary
-Conversion Type	Method Used
-Decimal → Binary	Integer.toBinaryString()
-Decimal → Octal	Integer.toOctalString()
-Decimal → Hexadecimal	Integer.toHexString()
-Binary → Decimal	Integer.parseInt(s, 2)
-Octal → Decimal	Integer.parseInt(s, 8)
-Hex → Decimal	Integer.parseInt(s, 16)
+This Java program demonstrates the conversion between different number systems: Decimal, Binary, Octal, and Hexadecimal. It uses Java's inbuilt methods for performing these conversions both ways.
 
-🧠 Methods Explained One by One
-1️⃣ decimalToBinary()
-Purpose:
-Convert a decimal number (e.g., 27) to binary.
+| Conversion Type         | Method Used                          |
+|-------------------------|--------------------------------------|
+| Decimal → Binary        | `Integer.toBinaryString()`           |
+| Decimal → Octal         | `Integer.toOctalString()`            |
+| Decimal → Hexadecimal   | `Integer.toHexString()`             |
+| Binary → Decimal        | `Integer.parseInt(s, 2)`             |
+| Octal → Decimal         | `Integer.parseInt(s, 8)`             |
+| Hex → Decimal           | `Integer.parseInt(s, 16)`            |
 
-Logic:
+## 🧠 Methods Explained One by One
 
-Divide the number by 2 repeatedly.
+### 1️⃣ `decimalToBinary()`
 
-Store the remainder at each step.
+- **Purpose**: Convert a decimal number (e.g., 27) to binary.
+  
+- **Logic**:
+  - Divide the number by 2 repeatedly.
+  - Store the remainder at each step.
+  - Insert the remainders in reverse order using `StringBuilder`.
 
-Insert the remainders in reverse order using StringBuilder.
-
+```java
 int num = 27;
 while (num > 0) {
     int r = num % 2;
     s.insert(0, r + " ");
     num = num / 2;
 }
-Output:
 
-decimal to binary conversion is : 1 1 0 1 1
+
 
 
 2️⃣ decimalToOctal()
-Purpose:
-Convert a decimal number (e.g., 10) to octal.
+Purpose: Convert a decimal number (e.g., 10) to octal.
 
 Logic:
 
@@ -232,7 +232,6 @@ Divide the number by 8 repeatedly.
 
 Store remainders and reverse them using StringBuilder.
 
-java
 
 int num = 10;
 while (num > 0) {
@@ -240,12 +239,10 @@ while (num > 0) {
     s.insert(0, r + " ");
     num = num / 8;
 }
-Output:
 
-decimal to octal conversion is : 1 2
+
 3️⃣ decimalToHexadecimal()
-Purpose:
-Convert a decimal number (e.g., 10) to hexadecimal.
+Purpose: Convert a decimal number (e.g., 10) to hexadecimal.
 
 Logic:
 
@@ -255,24 +252,17 @@ For remainders >= 10, map them to A-F.
 
 Insert characters in reverse using StringBuilder.
 
-java
-Copy
-Edit
 int dec = 10;
 int r = dec % 16;
 if (r < 10)
     ss.insert(0, (char)('0' + r));
 else
     ss.insert(0, (char)('A' + (r - 10)));
-Output:
 
-vbnet
-Copy
-Edit
-decimal to hexadecimal: A
+
+
 4️⃣ binaryToDecimal()
-Purpose:
-Convert a binary number (e.g., 1010) to decimal.
+Purpose: Convert a binary number (e.g., 1010) to decimal.
 
 Logic:
 
@@ -282,29 +272,27 @@ Convert string to integer.
 
 Use modulus and power of 2 to compute decimal.
 
-java
-Copy
-Edit
+
 int res = 0, i = 0;
 while (num > 0) {
     int r = num % 10;
     res += r * Math.pow(2, i++);
     num /= 10;
 }
-Output:
-binary to decimal number conversion is: 10
+
+
 
 5️⃣ octalToDecimal()
-Purpose:
-Convert an octal number (e.g., 42) to decimal.
+Purpose: Convert an octal number (e.g., 42) to decimal.
 
 Logic:
 
 Read octal as a string ("42").
 
-###Convert string to integer.
+Convert string to integer.
 
-###Use modulus and power of 8 to compute decimal.
+Use modulus and power of 8 to compute decimal.
+
 
 int res = 0, i = 0;
 while (num > 0) {
@@ -312,10 +300,29 @@ while (num > 0) {
     res += r * Math.pow(8, i++);
     num /= 10;
 }
-Output:
-octal to decimal number conversion is: 34
 
 ✅ Highlights
-Uses Java’s inbuilt methods (Integer.toBinaryString(), Integer.toOctalString(), Integer.toHexString(), Integer.parseInt()).
+The program uses Java’s inbuilt methods:
 
-Demonstrates how Java handles number system prefixes (0b, 0, 0x).
+Integer.toBinaryString()
+
+Integer.toOctalString()
+
+Integer.toHexString()
+
+Integer.parseInt()
+
+It demonstrates how Java handles number system prefixes:
+
+Binary: 0b
+
+Octal: 0
+
+Hexadecimal: 0x
+
+
+📈 Time & Space Complexity
+Time Complexity: O(1) for each conversion as the operations are simple arithmetic operations.
+
+Space Complexity: O(1) as no additional space is used other than storing the results
+
