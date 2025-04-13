@@ -159,8 +159,8 @@ public class Normal
     }
 ```
 
-    ### Decimal to Octal Conversion
 ---
+    ### Decimal to Octal Conversion
 
 ```
     public  static void Dec_to_octal()
