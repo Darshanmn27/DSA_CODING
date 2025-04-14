@@ -1,4 +1,4 @@
-# Day 12: Swapping of Two Numbers in 3 Ways
+
 
 ## 📌 Problem Statement
 Given two integers `a` and `b`, the task is to swap the values of the two integers without affecting any other variables.
