@@ -184,3 +184,128 @@ In this problem, you learned **3 different ways** to swap two numbers:
 - No overflow issues like arithmetic operations.
 
 ---
+
+
+# 🚀 Check Even or Odd Number in Java
+
+This Java program demonstrates **three different approaches** to determine whether a given number is **even** or **odd**:
+
+1. Using `if-else` statement
+2. Using `ternary` operator
+3. Using **bitwise** operation
+
+---
+
+## 🧠 Problem Statement
+
+Write a program to check whether a given number is even or odd.
+
+> An **even number** is divisible by 2 (i.e., `num % 2 == 0`), otherwise it's **odd**.
+
+---
+
+## 📌 Approaches
+
+### ✅ 1. Using `if-else` Statement
+
+A basic and intuitive approach using conditional statements to check if a number is divisible by 2.
+
+```java
+public static void using_if_else() {
+    int num = 20285;
+    if (num % 2 == 0) {
+        System.out.println("even number");
+    } else {
+        System.out.println("odd number");
+    }
+}
+```
+Time Complexity: O(1)
+
+Space Complexity: O(1)
+
+✅ 2. Using Ternary Operator
+A more compact version using the ternary operator to determine and print the result in one line.
+```
+public static void using_ternory() {
+    System.out.println("using the ternary operator:");
+    int num = 2027;
+    String result = (num % 2 == 0) ? num + " is an Even number." : num + " is an Odd number.";
+    System.out.println(result);
+}
+```
+Time Complexity: O(1)
+
+Space Complexity: O(1)
+
+✅ 3. Using Bitwise Operator
+A clever approach using the bitwise AND & operator. If the least significant bit is 1, the number is odd.
+```
+public static void usingbitwise() {
+    int num = 3037;
+    if ((num & 1) == 0) {
+        System.out.println(num + " is an Even number.");
+    } else {
+        System.out.println(num + " is an Odd number.");
+    }
+}
+```
+Time Complexity: O(1)
+
+Space Complexity: O(1)
+
+📤 Sample Output
+using the ternary operator:
+2027 is an Odd number.
+3037 is an Odd number.
+
+🧾 Full Code
+```
+public class Check_even_odd {
+
+    public static void using_if_else() {
+        int num = 20285;
+        if (num % 2 == 0) {
+            System.out.println("even number");
+        } else {
+            System.out.println("odd number");
+        }
+    }
+
+
+    public static void using_ternory() {
+        System.out.println("using the ternary operator:");
+        int num = 2027;
+        String result = (num % 2 == 0) ? num + " is an Even number." : num + " is an Odd number.";
+        System.out.println(result);
+    }
+
+    public static void usingbitwise() {
+        int num = 3037;
+        if ((num & 1) == 0) {
+            System.out.println(num + " is an Even number.");
+        } else {
+            System.out.println(num + " is an Odd number.");
+        }
+    }
+
+    public static void main(String[] args) {
+        using_if_else();
+        using_ternory();
+        usingbitwise();
+    }
+}
+```
+📈 Complexity Analysis
+Approach	Time Complexity	Space Complexity
+If-Else	O(1)	O(1)
+Ternary Operator	O(1)	O(1)
+Bitwise Operator	O(1)	O(1)
+🙌 Conclusion
+All three methods are efficient and run in constant time.
+
+The bitwise approach is the most optimized at the bit level and is often used in low-level systems.
+
+Choose the method based on readability, performance needs, or just for learning fun! ✨
+
+
