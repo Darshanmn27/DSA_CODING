@@ -309,3 +309,74 @@ The bitwise approach is the most optimized at the bit level and is often used in
 Choose the method based on readability, performance needs, or just for learning fun! ✨
 
 
+# 🗓️ Leap Year Checker in Java
+
+This repository demonstrates how to check whether a given year is a **leap year** using **three different approaches** in Java. Each method is written with clean, modular code, handles edge cases, and uses beginner-friendly logic.
+
+---
+
+## ✅ Covered Approaches
+
+1️⃣ **Using If-Else Condition**  
+2️⃣ **Using Ternary Operator**  
+3️⃣ **Using Java’s `LocalDate` API** (`java.time.LocalDate`)
+
+---
+
+## 💡 Leap Year Logic
+
+A year is a leap year if:
+- It is divisible by **4** and **not divisible by 100**, **OR**
+- It is divisible by **400**
+
+---
+
+## 📄 Code Preview
+
+```java
+import java.time.LocalDate;
+
+public class Leap_year_or_not {
+
+    public static void leap_year_using_if_else() {
+        int year = 100;
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            System.out.println("Given year is a leap year");
+        } else {
+            System.out.println("Given year is a normal year");
+        }
+    }
+```
+```
+
+    public static void checkleap_year_using_ternary() {
+        System.out.println("Check leap year using the ternary operator:");
+        int year = 2024;
+        String result = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) ? "is a Leap Year." : "is not a Leap Year.";
+        System.out.println(year + " " + result);
+    }
+```
+```
+
+    public static void check_leap_using_datetimeclass() {
+        System.out.println("Using the DateTime class:");
+        int year = 2024;
+        boolean res = LocalDate.of(year, 1, 1).isLeapYear();
+        if (res) {
+            System.out.println(year + " is a leap year.");
+        } else {
+            System.out.println(year + " is not a leap year.");
+        }
+    }
+```
+```
+
+    public static void main(String[] args) {
+        leap_year_using_if_else();
+        checkleap_year_using_ternary();
+        check_leap_using_datetimeclass();
+    }
+}
+```
+
+
