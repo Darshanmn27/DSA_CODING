@@ -47,7 +47,7 @@ if (num == 1) {
 
 
 ⚡ Optimal Bitwise Approach
-```
+```java
 int num = 1024;
 if ((num & (num - 1)) == 0) 
 {
