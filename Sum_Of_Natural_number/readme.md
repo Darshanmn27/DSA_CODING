@@ -47,14 +47,17 @@ if (num == 1) {
 
 
 ⚡ Optimal Bitwise Approach
+```
 int num = 1024;
 if ((num & (num - 1)) == 0) 
 {
     System.out.println("power of two");
-} else 
+}
+else 
 {
     System.out.println("not power of two");
 }
+```
 
 ✅ Time Complexity: O(1)
 
