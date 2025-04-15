@@ -1,49 +1,52 @@
-# Power of Two Checker (Java)
+# 🔢 Java Programs: Power of Two Checker & Sum of Natural Numbers
 
-This Java program determines whether a given number is a power of two using **two different approaches**:
+This repository contains two simple and educational Java programs:
 
-1. **Brute Force Method** – repeatedly divides the number by 2.
-2. **Optimal Method** – uses bitwise operation to check the power of two.
+1. **Power of Two Checker**
+2. **Sum of Natural Numbers**
 
-## 🚀 Features
+Each program demonstrates multiple approaches — from brute force to optimized methods — highlighting the logic and efficiency behind them.
 
-- Demonstrates basic control flow (if-else, while loop)
-- Shows efficient use of bitwise operations
-- Educational comparison between brute force and optimal techniques
+---
 
-## 📁 File Structure
+## 📘 1. Power of Two Checker (Java)
 
-Power_Of_two_OR_Not.java README.md
+This Java program determines whether a given number is a **power of two** using:
+
+1. **Brute Force Method** – Repeated division by 2
+2. **Optimal Bitwise Method** – Checks if the number has only one set bit
+
+### 🚀 Features
+
+- Covers control flow: `while`, `if-else`
+- Uses bitwise operations for performance
+- Compares naive and optimal logic
 
 
-## 🔍 How It Works
+### 🔍 How It Works
 
-### 1. Brute Force Approach
+#### ✅ Brute Force Approach
 
-- Keep dividing the number by 2 while it is even.
-- If the result is 1, it's a power of two.
-
-```
+```java
 int num = 168;
-while (num % 2 == 0) 
+while (num % 2 == 0)
 {
     num = num / 2;
 }
-if (num == 1) 
-{
+if (num == 1) {
     System.out.println("power of two");
-} 
-else 
-{
+} else {
     System.out.println("not power of two");
 }
 ```
-###2. Optimal Bitwise Approach
-A number is a power of two if it has only one bit set in binary.
 
-Bitwise check: num & (num - 1) == 0
 
-```
+✅ Time Complexity: O(log N)
+
+✅ Space Complexity: O(1)
+
+
+⚡ Optimal Bitwise Approach
 int num = 1024;
 if ((num & (num - 1)) == 0) 
 {
@@ -53,61 +56,55 @@ if ((num & (num - 1)) == 0)
     System.out.println("not power of two");
 }
 
-```
+✅ Time Complexity: O(1)
+
+✅ Space Complexity: O(1)
+
 📌 Output
+
 not power of two
 power of two
 
 
+📗 2. Sum of Natural Numbers (Java)
+This Java program calculates the sum of the first N natural numbers using:
+
+Brute Force Method – Iterative summation using a loop
+
+Better Mathematical Method – Using the formula n(n + 1)/2
+
+🚀 Features
+Shows basic loop handling
+
+Optimized mathematical computation
+
+Useful for beginner-level coding practice
 
 
-# Sum of Natural Numbers (Java)
 
-This Java program calculates the **sum of the first N natural numbers** using two approaches:
-
-1. **Brute Force Method** – Iterative addition using a loop.
-2. **Better Approach** – Uses the direct mathematical formula `n(n + 1) / 2`.
-
-## 🚀 Features
-
-- Demonstrates loop-based and formula-based techniques
-- Highlights efficiency improvement
-- Simple and beginner-friendly Java logic
-
-
-
-## 🔍 How It Works
-
-### 1. Brute Force Approach
-
-- Adds numbers from 1 to `n` using a for-loop.
-
-```java
+✅ Brute Force Approach
+```
 int num = 5;
 int sum = 0;
-for (int i = 1; i <= num; i++) 
-{
+for (int i = 1; i <= num; i++) {
     sum = sum + i;
 }
 System.out.println("Total sum is:");
 System.out.println(sum); // Output: 15
 ```
+✅ Time Complexity: O(N)
 
-2. Better Mathematical Approach
-Applies the direct formula:
+✅ Space Complexity: O(1)
 
-Sum=𝑛(𝑛+1)/2
+⚡ Better Mathematical Approach
 ```
-
 int num = 5;
 int sum = (num * (num + 1)) / 2;
 System.out.println("Sum of natural number with the help of the better approach is:");
 System.out.println(sum); // Output: 15
 ```
-📌 Output
 
-total sum is :
-15
-sum of natural number with the help of the better approach is :
-15
 
+✅ Time Complexity: O(1)
+
+✅ Space Complexity: O(1)
