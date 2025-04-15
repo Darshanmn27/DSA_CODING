@@ -86,7 +86,7 @@ Useful for beginner-level coding practice
 
 
 ✅ Brute Force Approach
-```
+```java
 int num = 5;
 int sum = 0;
 for (int i = 1; i <= num; i++) {
@@ -100,7 +100,7 @@ System.out.println(sum); // Output: 15
 ✅ Space Complexity: O(1)
 
 ⚡ Better Mathematical Approach
-```
+```java
 int num = 5;
 int sum = (num * (num + 1)) / 2;
 System.out.println("Sum of natural number with the help of the better approach is:");
