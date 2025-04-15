@@ -68,6 +68,8 @@ else
 not power of two
 power of two
 
+---
+
 
 📗 2. Sum of Natural Numbers (Java)
 This Java program calculates the sum of the first N natural numbers using:
