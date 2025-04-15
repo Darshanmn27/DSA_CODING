@@ -1,4 +1,4 @@
-# 🚀 Day 8: Check if a Number is Perfect or Not
+# 🚀  Check if a Number is Perfect or Not
 
 ## 📜 Problem Statement
 Given an integer **N**, write a program to **check whether the number is a Perfect Number or not**.
