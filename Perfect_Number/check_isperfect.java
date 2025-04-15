@@ -77,6 +77,18 @@ public class check_isperfect
         PerfectNumber_BruteForce();
         PerfectNumber_Better();
         System.out.println(isPerfectNumber(28));
+
+         int num=28;
+        if(num == 6 || num == 28 || num == 496 || num == 8128 || num == 33550336)
+        {
+            System.out.println("perfect number");
+        }
+        else
+        {
+            System.out.println("not perfect number");
+        }
+
+        
         
     }
 
