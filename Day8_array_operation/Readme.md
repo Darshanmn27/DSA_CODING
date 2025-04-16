@@ -55,7 +55,7 @@ public class ArrayMaxMinElement
         System.out.println("Maximum element using brute-force: " + max);
     }
 ```
-    ---
+---
 
 
 ### Optimal approach to find maximum
@@ -74,10 +74,10 @@ public class ArrayMaxMinElement
         System.out.println("Maximum element using optimal solution: " + max);
     }
  ```
-    ---
+---
 
     ### Brute-force to find minimum using sorting
-    ``` java
+``` java
     public static void minBruteForce() 
     {
         int[] arr = {1, 2, 3, 23, 23, 23, 27, -27, 2027, 9181};
@@ -87,10 +87,10 @@ public class ArrayMaxMinElement
     }
     
 ```
-    ---
+---
 
     ### Optimal approach to find minimum
-    ```java
+```java
     public static void minOptimal() 
     {
         int[] arr = {1, 2, 3, 23, 23, 23, 27, -27, 2027, 9181};
@@ -105,8 +105,8 @@ public class ArrayMaxMinElement
         System.out.println("Minimum element using optimal solution: " + min);
     }
 ```
-    ---
-    ```java
+---
+ ```java
 
     public static void main(String[] args) 
     {
