@@ -83,8 +83,7 @@ Local variables do not have default values and must be initialized before they a
 Their scope is limited to the method or block where they are declared.
 
 Example:
-```
-Java
+```Java
 public class Local_variable 
 {
     public static void main(String[] args) 
@@ -127,8 +126,7 @@ Static variables are shared among all instances of a class. There is only one co
 They are initialized only once and can be accessed using the class name or an object.
 
 Example1:
-```
-java
+```java
 class Circle
 {
     static final  double PI=3.24159;
@@ -160,8 +158,7 @@ public class static_Variable_example1
 ---
 example2 :
 
-```
-java
+```java
 
 class Week
 {
