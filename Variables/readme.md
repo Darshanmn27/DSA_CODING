@@ -67,7 +67,7 @@ public  class Instance_Variable
 
 ```
 
-Default values of instance variables:
+## Default values of instance variables:
 
 int: 0
 
@@ -75,7 +75,7 @@ boolean: false
 
 String: null
 ---
-Local Variables
+## Local Variables
 Local variables are declared inside a method, constructor, or block.
 
 Local variables do not have default values and must be initialized before they are used.
@@ -118,7 +118,7 @@ public class Local_variable
 Note: Local variables must be explicitly initialized before use.
 
 ---
-Static Variables
+## Static Variables
 Static variables are declared using the static keyword.
 
 Static variables are shared among all instances of a class. There is only one copy of the static variable for the entire class.
