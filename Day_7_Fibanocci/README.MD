@@ -36,6 +36,10 @@ Output: 0, 1, 1, 2, 3, 5, 8
 public class Fibonacci_Iterative {
     public static void main(String[] args) {
         int N = 5;
+        if(N<=0)
+        {
+            return ;
+        }
         int a = 0, b = 1;
 
         System.out.print(a + ", " + b);
@@ -121,6 +125,11 @@ public class Fibonacci_Recursive {
 public class Fibonacci_DP {
     public static void main(String[] args) {
         int N = 5;
+
+        if(N<=0)
+        {
+            return ;
+        }
         int[] fib = new int[N];
 
         fib[0] = 0;
