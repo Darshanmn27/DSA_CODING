@@ -76,7 +76,7 @@ public class ArrayMaxMinElement
  ```
 ---
 
-###Brute-force to find minimum using sorting
+### Brute-force to find minimum using sorting
 ``` java
     public static void minBruteForce() 
     {
@@ -89,7 +89,7 @@ public class ArrayMaxMinElement
 ```
 ---
 
-###Optimal approach to find minimum
+### Optimal approach to find minimum
 ```java
     public static void minOptimal() 
     {
@@ -118,7 +118,7 @@ public class ArrayMaxMinElement
 }
 ```
 ---
-###🎯 Key Takeaways
+### 🎯 Key Takeaways
 Brute-force is easy to implement but not always efficient.
 
 Optimal solutions save time and are better for large datasets.
