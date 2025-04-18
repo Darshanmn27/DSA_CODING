@@ -50,8 +50,11 @@ Track the maximum count using Math.max().
 ---
 
 
-### ⏱️ Time & Space Complexity
-
-Type	          |    Complexity |	     Explanation
-Time Complexity	  |     O(n)	  |     Single traversal through the array
-Space Complexity  | 	   O(1)	  |      Only uses two variables: count and max
+###  Time Complexity	 
+  O(n)	
+  
+ Single traversal through the array
+ ---
+### Space Complexity  
+	   O(1)	 
+   Only uses two variables: count and max
