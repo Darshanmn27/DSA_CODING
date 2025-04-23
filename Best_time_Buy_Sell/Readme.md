@@ -60,6 +60,8 @@ public class Best_Time {
 ---
 ### Complexity	Description
 ⏰ Time	  O(n) - Iterates through the array once.
+---
+
 🧠 Space	O(1) - Constant space is used regardless of input size.
 
 
