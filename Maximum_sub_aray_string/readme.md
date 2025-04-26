@@ -1,4 +1,4 @@
-###Longest Substring Without Repeating Characters
+###  Longest Substring Without Repeating Characters
 This Java program finds the length of the longest substring without repeating characters from a given string using the Sliding Window technique.
 
 ---
@@ -53,11 +53,11 @@ public class Without_repeating
 ----
 
 ### ⏱️ Time Complexity
-O(N)
+### O(N)
 Each character is added and removed from the HashSet at most once, where N is the length of the string.
 
 ### 💾 Space Complexity
-O(N)
+### O(N)
 In the worst case (all unique characters), the HashSet stores N characters.
 
 
