@@ -129,6 +129,27 @@ public class bubbleSort {
 
 }
 ```
+
+
+## 🟢 Insertion Sort
+
+**Description:**  
+Insertion Sort builds the sorted array one element at a time by placing each element in its correct position.
+
+**Time Complexity:**
+| Case       | Time      |
+|------------|-----------|
+| Best       | O(n)      |
+| Average    | O(n²)     |
+| Worst      | O(n²)     |
+
+**Space Complexity:** O(1)  
+**Stable Sort:** ✅ Yes  
+**Use Case:** Small datasets, or arrays that are already nearly sorted.
+
+---
+
+
 ---
 ```java
 public class InsertionSort {
@@ -165,24 +186,6 @@ public class InsertionSort {
 ```
 ---
 
-
-## 🟢 Insertion Sort
-
-**Description:**  
-Insertion Sort builds the sorted array one element at a time by placing each element in its correct position.
-
-**Time Complexity:**
-| Case       | Time      |
-|------------|-----------|
-| Best       | O(n)      |
-| Average    | O(n²)     |
-| Worst      | O(n²)     |
-
-**Space Complexity:** O(1)  
-**Stable Sort:** ✅ Yes  
-**Use Case:** Small datasets, or arrays that are already nearly sorted.
-
----
 
 ## 🚀 Example Inputs & Outputs
 
