@@ -31,7 +31,8 @@ Rotate the given array to the left by **1 position**.
 - Place the first element at the last index.
 
 ---
-``Java
+---
+```Java
 public class rotateArrayByOnePlace {
     // left rotate the arry by one place
     public static void brute(int arr[], int n) {
