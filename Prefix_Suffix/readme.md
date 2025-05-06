@@ -53,6 +53,7 @@ Space Complexity: O(n)
 ---
  PrefixOptimal.java
  ---
+ ```java
 
 public class PrefixOptimal {
     public static int[] optimal(int arr[]) {
