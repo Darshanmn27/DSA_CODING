@@ -4,7 +4,6 @@ This project contains two Java programs:
 
 1. `CommonPrefix.java` – Finds the **longest common prefix** among a list of strings.
 2. `CommonSuffix.java` – Finds the **longest common suffix** among a list of strings.
-
 ---
 
 ## 📌 Problem Description
@@ -66,7 +65,7 @@ public class CommonPrefix {
 
 
 ---
-```
+```java
 public class CommonSuffix {
 
     public static void main(String[] args) {
