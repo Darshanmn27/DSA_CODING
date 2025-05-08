@@ -51,8 +51,8 @@ Count number of 0s, 1s, and 2s.
 Fill the array sequentially with those counts.
 ---
 ---
-
- ``` java
+```
+```java
 public class Better {
     public static void main(String[] args) {
         int arr[] = { 1, 0, 0, 1, 2, 0, 0, 2, 1, 0, 2 };
@@ -91,7 +91,7 @@ public class Better {
 
     }
 
-}
+}```
 ```
 
 ---
