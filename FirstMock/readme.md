@@ -131,7 +131,7 @@ public class ValidParentheseSwitch {
 }
 ```
 ---
-```
+```java
 import java.util.Stack;
 
 public class ValidParenthesis {
