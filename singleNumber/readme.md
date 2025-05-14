@@ -73,7 +73,7 @@ O(n) – Single pass through the array
 🧠 Space Complexity
 O(1) – Constant extra space (no additional data structures)
 ---
-``java
+```java
 public class optimalSingle {
 
     public static int singleNumber(int arr[]) {
