@@ -123,3 +123,49 @@ public class HierarchicalInheritance {
     }
 }
 ```
+
+---
+4. Hybrid Inheritance (Without Interfaces)
+Definition:
+A combination of two or more types of inheritance. Java does not support multiple inheritance directly, but hybrid inheritance can be simulated using multilevel and hierarchical inheritance together.
+
+---
+```java
+class Grandparent {
+    String surname = "Kumar";
+    void read() {
+        System.out.println("I love reading books");
+    }
+}
+
+class Parent1 extends Grandparent {
+    void profession() {
+        System.out.println("Parent1 is a teacher");
+    }
+}
+
+class Parent2 extends Grandparent {
+    void profession() {
+        System.out.println("Parent2 is a Cabinet Secretary");
+    }
+}
+
+class Child extends Parent1 {
+    void childHobby() {
+        System.out.println("Child loves programming");
+    }
+}
+
+public class HybridInheritance {
+    public static void main(String[] args) {
+        Child c1 = new Child();
+        c1.read();
+        c1.profession();
+        c1.childHobby();
+
+        Parent2 p2 = new Parent2();
+        p2.read();
+        p2.profession();
+    }
+}
+```
