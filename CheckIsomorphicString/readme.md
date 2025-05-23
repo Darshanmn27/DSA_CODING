@@ -7,7 +7,8 @@ This repository provides two approaches to check whether two strings are isomorp
 ### Optimized Approach (Uses two hash maps for character mapping)
 
 Problem Statement
-Two strings are isomorphic if the characters in one string can be replaced to get the other string while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
+---
+### Two strings are isomorphic if the characters in one string can be replaced to get the other string while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
 ---
 For example:
 
@@ -16,6 +17,7 @@ Output: true
 
 Input: s = "foo", t = "bar"
 Output: false
+---
 Approach 1: Brute-Force Method 🔥
 Explanation:
 Compares each character pair (s[i] and t[i]) with all other pairs using nested loops.
@@ -54,7 +56,7 @@ Time Complexity: O(N²) (Quadratic) – Due to nested loops.
 
 Space Complexity: O(1) – No extra storage used.
 ---
-Approach 2: Optimized Method 🚀
+### Approach 2: Optimized Method 🚀
 Explanation:
 Uses two hash maps to store character mappings from s → t and t → s.
 
