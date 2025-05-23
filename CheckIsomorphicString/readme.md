@@ -49,7 +49,7 @@ public class BruteIso {
         System.out.println(isIsomorphic("paper", "title")); // true
     }
 }
-
+```
 ---
 Complexity Analysis:
 Time Complexity: O(N²) (Quadratic) – Due to nested loops.
