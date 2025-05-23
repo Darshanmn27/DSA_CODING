@@ -1,14 +1,13 @@
-### Isomorphic Strings Checker
-Overview
-This repository provides two approaches to check whether two strings are isomorphic:
----
-### Brute-Force Approach (Uses nested loops)
+# Isomorphic Strings Checker
 
-### Optimized Approach (Uses two hash maps for character mapping)
+## Overview
+This repository provides two approaches to check whether two strings are **isomorphic**:
+- **Brute-Force Approach** (Uses nested loops)
+- **Optimized Approach** (Uses two hash maps for character mapping)
 
-Problem Statement
----
-### Two strings are isomorphic if the characters in one string can be replaced to get the other string while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
+## Problem Statement
+Two strings are **isomorphic** if the characters in one string can be replaced to get the other string while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
+
 ---
 For example:
 
@@ -18,15 +17,16 @@ Output: true
 Input: s = "foo", t = "bar"
 Output: false
 ---
-Approach 1: Brute-Force Method 🔥
-Explanation:
-Compares each character pair (s[i] and t[i]) with all other pairs using nested loops.
 
-Ensures each character mapping remains consistent.
+---
 
-This method is inefficient for large inputs.
+## Approach 1: Brute-Force Method 🔥
+### Explanation:
+- Compares each character pair (`s[i]` and `t[i]`) with all other pairs using **nested loops**.
+- Ensures each character mapping remains consistent.
+- This method is inefficient for large inputs.
 
-Implementation:
+### Implementation:
 ```java
 public class BruteIso {
     public static boolean isIsomorphic(String s, String t) {
@@ -49,7 +49,7 @@ public class BruteIso {
         System.out.println(isIsomorphic("paper", "title")); // true
     }
 }
-```
+
 ---
 Complexity Analysis:
 Time Complexity: O(N²) (Quadratic) – Due to nested loops.
