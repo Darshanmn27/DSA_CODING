@@ -8,9 +8,10 @@ Today's challenge was all about tackling a **classic string manipulation problem
 Given a valid parentheses string, remove the **outermost parentheses** from each primitive part and return the modified string.  
 
 ### ✅ Example:
-```text
+```java
 Input:  "(()())(())"  
 Output: "()()()"  
+```
 🛠 Approach (Efficient Single-Pass Solution)
 💡 Idea: Use a counter variable (openCount) to track parentheses depth and intelligently append only inner parentheses to the result string.
 
