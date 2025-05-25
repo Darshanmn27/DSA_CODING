@@ -8,10 +8,8 @@ This Java program implements the classic **Fizz Buzz** problem:
 - Otherwise, prints the number itself.
 
 ## How to Run
-1. Compile the Java file:
-   ``` Java
-public class FizzBuzz {
-    public static List<String> fizzBuzz(int n) {
+
+```java
         List<String> result = new ArrayList<>();
         
         for (int i = 1; i <= n; i++) {
