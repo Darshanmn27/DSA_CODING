@@ -9,10 +9,7 @@ This Java program implements the classic **Fizz Buzz** problem:
 
 ## How to Run
 1. Compile the Java file:
-   ```Java
-   import java.util.ArrayList;
-import java.util.List;
-
+   ``` Java
 public class FizzBuzz {
     public static List<String> fizzBuzz(int n) {
         List<String> result = new ArrayList<>();
